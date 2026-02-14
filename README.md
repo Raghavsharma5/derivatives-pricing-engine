@@ -229,15 +229,23 @@ print(f"Calibration RMSE: ${params['rmse']:.6f}")
 
 ```
 DPAVC/
-├── models.py              # Pricing models
-├── monte_carlo.py         # MC engine with variance reduction  
-├── imp_vol.py             # IV calculation and SVI
-├── calibration.py         # Model calibration
-├── performance.py         # Benchmarking utilities
-├── examples.py            # Usage examples
-├── demo.py                # Quick demonstration
-├── test_models.py         # Test suite
-└── requirements.txt       # Dependencies
+├── dpavc/                    # Main package
+│   ├── __init__.py
+│   ├── calibration.py       # Model calibration
+│   ├── imp_vol.py           # IV calculation and SVI
+│   ├── models.py            # Pricing models
+│   ├── monte_carlo.py       # MC engine with variance reduction 
+│   ├── performance.py       # Benchmarking utilities
+├── examples/  
+│   ├── demo.py              # Quick demonstration
+│   └── examples.py          # Usage examples
+├── tests/
+│   ├── quick_test.py        
+│   └── test_models.py       # Test suite
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt        # Dependencies
 ```
 
 ## Testing
